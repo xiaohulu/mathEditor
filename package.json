@@ -1,0 +1,15 @@
+{
+    "name": "mathEditor",
+    "description": "mathEditor is a tool that input math formula",
+    "version": "0.1.0",
+    "author": "xiaohulu <idocument@qq.com>",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xiaohulu/mathEditor.git"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "intern": "^4.0.0-rc.1"
+    }
+}
