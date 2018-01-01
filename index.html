@@ -6,14 +6,38 @@
     <title>MathEditor</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          extensions: ["mml2jax.js"],
+          jax: ["input/MathML", "output/CommonHTML"],
+          showProcessingMessages: false,
+          showMathMenu: false,
+          skipStartupTypeset: false,
+          messageStyle: "none",
+          mml2jax: {
+              preview: "none"
+          }
+        });
+        MathJax.Hub.processSectionDelay = 0;
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>MathEditor</h1>
 
-        <div id="mathEditor"></div>
+        <div id="mathEditor">
+
+        </div>
+        <math>
+            <mn>1</mn>
+            <mo>+</mo>
+            <mn>2</mn>
+            <mo>=</mo>
+            <mn>3</mn>
+        </math>
+
     </div>
-    <script type="text/javascript" src="src/app.js"></script>
+    <script data-main="src/app" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
 </body>
 </html>
