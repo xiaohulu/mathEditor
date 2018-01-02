@@ -1,17 +1,26 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "module": "umd",
+        "lib": [
+            "es2015",
+            "dom",
+            "dom.iterable"
+        ],
+        "module": "commonjs",
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "types": [
+            "systemjs",
+            "intern"
+        ]
     },
     "include": [
-        "src/**/*"
+        "src/**/*.ts",
+        "tests/**/*.ts"
     ],
     "exclude": [
         "node_modules"
-    ],
-    "types": ["intern"]
+    ]
 }

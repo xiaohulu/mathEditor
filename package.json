@@ -8,13 +8,17 @@
         "type": "git",
         "url": "https://github.com/xiaohulu/mathEditor.git"
     },
-    "dependencies": {
-
-    },
+    "dependencies": {},
     "devDependencies": {
-        "intern": "^4.0.0-rc.1"
+        "@types/systemjs": "~0.20.6",
+        "intern": "~4.1.4",
+        "systemjs": "~0.20.19",
+        "typescript": "~2.6.2"
     },
     "scripts": {
-     "start": "http-server -a 0.0.0.0 -p 8080"
- }
+        "test": "intern",
+        "start": "intern serveOnly",
+        "build": "tsc && tsc -p tests",
+        "clean": "del 'src/**/*.js' 'tests/**/*.js'"
+    }
 }

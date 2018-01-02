@@ -3,18 +3,19 @@
 MathEditor is a WYSIWYG math editor.
 If you can read, then you can write.
 
-## How to run http server locally
+### Installation
 
-Install `http-server` via `npm`:
+To start working with this package, clone the repository and run `npm install`.
+
+## Testing
+
+Test cases MUST be written using [Intern](https://theintern.io/) using the Object test interface and Assert assertion interface.
+
+### From a browser
 
 ```sh
-npm install http-server -g
+npm start
 ```
 
-Go to root folder, then run below command in cmd:
-
-```sh
-http-server
-```
-
-Now you can vist http://localhost:8080 to view MathEditor demo page.
+* Navigate to `http://localhost:9000/__intern/` to run tests,
+* Navigate to `http://localhost:9000` to view MathEditor demo page.

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>MathEditor</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="src/mathEditor.css">
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
           extensions: ["mml2jax.js"],
@@ -22,22 +25,19 @@
       </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>MathEditor</h1>
 
-        <div id="mathEditor">
+        <div id="mathEditor" class="" style="width:500px; height:300px;">
 
         </div>
-        <math>
-            <mn>1</mn>
-            <mo>+</mo>
-            <mn>2</mn>
-            <mo>=</mo>
-            <mn>3</mn>
-        </math>
-
     </div>
-    <script data-main="src/app" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+    
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="src/config.js"></script>
+    <script>SystemJS.import('./src/app.js');</script>
 </body>
+
 </html>

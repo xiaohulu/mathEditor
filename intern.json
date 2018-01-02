@@ -1,3 +1,7 @@
 {
-    "suites": "tests/unit/**/*.js"
+    "suites": "tests/unit/**/*.js",
+    "browser": {
+        "loader": "systemjs",
+        "plugins": { "script": "src/config.js", "useLoader": true }
+    }
 }
