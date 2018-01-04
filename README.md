@@ -21,3 +21,14 @@ npm start
 
 * Navigate to `http://localhost:9000/__intern/` to run tests.
 * Navigate to `http://localhost:9000` to view MathEditor demo page.
+
+## Code style
+
+This repository uses [`prettier`](https://prettier.io/) for code styling rules and formatting.
+A pre-commit hook is installed automatically and configured to run `prettier` against all staged files as per the configuration in the projects `package.json`.
+
+An additional npm script to run `prettier` (with write set to `true`) against all `src` and `test` project files is available by running:
+
+```bash
+npm run prettier
+```

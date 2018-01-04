@@ -12,12 +12,31 @@
         "@types/systemjs": "~0.20.6",
         "intern": "~4.1.4",
         "systemjs": "~0.20.19",
-        "typescript": "~2.6.2"
+        "typescript": "~2.6.2",
+        "husky": "0.14.3",
+        "lint-staged": "6.0.0",
+        "prettier": "1.9.2"
     },
     "scripts": {
         "test": "intern",
         "start": "intern serveOnly",
         "build": "tsc -p .",
-        "clean": "del 'src/**/*.js' 'tests/**/*.js'"
+        "clean": "del 'src/**/*.js' 'tests/**/*.js'",
+        "precommit": "lint-staged",
+        "prettier": "prettier --write 'src/**/*.ts' 'tests/**/*.ts'"
+    },
+    "lint-staged": {
+        "*.{ts,tsx}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "prettier": {
+        "singleQuote": true,
+        "tabWidth": 4,
+        "useTabs": true,
+        "parser": "typescript",
+        "printWidth": 120,
+        "arrowParens": "always"
     }
 }
