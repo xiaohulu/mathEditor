@@ -34,7 +34,7 @@
                     "platform": "Windows 10"
                 }
             ],
-            "maxConcurrency": 4
+            "maxConcurrency": 2
         }
     }
 }
