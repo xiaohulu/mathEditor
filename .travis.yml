@@ -5,6 +5,7 @@ env:
   global:
   - SAUCE_USERNAME: jinzw
   - SAUCE_ACCESS_KEY: ce82cb32-53d1-4beb-a908-24fc80298021
-script: 
+before_script:
   - tsc
+script: 
   - node_modules/.bin/intern
