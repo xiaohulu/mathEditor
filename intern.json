@@ -1,9 +1,16 @@
 {
+    "capabilities+": {
+        "project": "MathEditor",
+        "name": "mathEditor"
+    },
     "suites": "tests/unit/**/*.js",
     "functionalSuites": "tests/functional/**/*.js",
     "environments": [
         {
             "browserName": "node"
+        },
+        {
+            "browserName": "chrome"
         }
     ],
     "browser": {
@@ -13,34 +20,9 @@
             "useLoader": true
         }
     },
-    "coverage": ["src/**/*.js"],
-    "configs": {
-        "saucelabs": {
-            "tunnel": "saucelabs",
-            "tunnelOptions": {
-                "username": "jinzw",
-                "accessKey": "b7100cc5-ccfe-45df-8639-f474e9ab58ec"
-            },
-            "defaultTimeout": 10000,
-            "environments+": [
-                {
-                    "browserName": "internet explorer",
-                    "version": [
-                        "11.0"
-                    ],
-                    "platform": "Windows 7"
-                },
-                {
-                    "browserName": "firefox",
-                    "version": "43",
-                    "platform": "Windows 10"
-                },
-                {
-                    "browserName": "chrome",
-                    "platform": "Windows 10"
-                }
-            ],
-            "maxConcurrency": 1
-        }
-    }
+    "coverage": [
+        "src/**/*.js",
+        "!src/config.js"
+    ],
+    "tunnel": "selenium"
 }

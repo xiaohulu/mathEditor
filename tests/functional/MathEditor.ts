@@ -4,7 +4,7 @@ const { assert } = intern.getPlugin('chai');
 registerSuite('MathEditor functional tests', {
     'run'() {
         return this.remote
-                .get('index.html')
+                .get('index1.html')
                 .findById('mathEditor')
                 .clickMouseButton(0)
                 .type("a")
