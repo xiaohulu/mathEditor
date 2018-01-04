@@ -2,8 +2,10 @@
     "suites": "tests/unit/**/*.js",
     "functionalSuites": "tests/functional/**/*.js",
     "environments": [
-		{ "browserName": "node" }
-],
+        {
+            "browserName": "node"
+        }
+    ],
     "browser": {
         "loader": "systemjs",
         "plugins": {
@@ -11,6 +13,7 @@
             "useLoader": true
         }
     },
+    "coverage": ["src/**/*.js"],
     "configs": {
         "saucelabs": {
             "tunnel": "saucelabs",
