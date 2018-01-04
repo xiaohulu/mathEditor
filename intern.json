@@ -8,10 +8,14 @@
             "useLoader": true
         }
     },
+    "tunnel": "saucelabs",
     "configs": {
         "saucelabs": {
             "tunnel": "saucelabs",
-            "tunnelOptions": {},
+            "tunnelOptions": {
+                "username": "jinzw",
+                "accessKey": "ce82cb32-53d1-4beb-a908-24fc80298021"
+            },
             "defaultTimeout": 10000,
             "environments+": [
                 {
