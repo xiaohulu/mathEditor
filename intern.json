@@ -16,7 +16,7 @@
             "tunnel": "saucelabs",
             "tunnelOptions": {
                 "username": "jinzw",
-                "accessKey": "ce82cb32-53d1-4beb-a908-24fc80298021"
+                "accessKey": "b7100cc5-ccfe-45df-8639-f474e9ab58ec"
             },
             "defaultTimeout": 10000,
             "environments+": [
