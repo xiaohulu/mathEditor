@@ -1,5 +1,7 @@
 # MathEditor
 
+[![Build Status](https://travis-ci.org/xiaohulu/mathEditor.svg?branch=master)](https://travis-ci.org/xiaohulu/mathEditor)
+
 MathEditor is a WYSIWYG math editor.
 If you can read, then you can write.
 
