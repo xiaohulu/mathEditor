@@ -18,7 +18,7 @@
     "scripts": {
         "test": "intern",
         "start": "intern serveOnly",
-        "build": "tsc && tsc -p tests",
+        "build": "tsc",
         "clean": "del 'src/**/*.js' 'tests/**/*.js'"
     }
 }
