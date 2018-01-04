@@ -1,4 +1,6 @@
 language: node_js
 node_js:
   - '8'
-script: node_modules/.bin/intern
+script: 
+  - npm build
+  - node_modules/.bin/intern
