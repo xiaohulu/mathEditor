@@ -17,5 +17,5 @@ Test cases MUST be written using [Intern](https://theintern.io/) using the Objec
 npm start
 ```
 
-* Navigate to `http://localhost:9000/__intern/` to run tests,
+* Navigate to `http://localhost:9000/__intern/` to run tests.
 * Navigate to `http://localhost:9000` to view MathEditor demo page.
