@@ -7,6 +7,10 @@ registerSuite('MathEditor functional tests', {
                 .get('index.html')
                 .findById('mathEditor')
                 .clickMouseButton(0)
+                .type("a")
+                .then(() => {
+                    assert.isTrue(true);
+                });
 
     }
 })
